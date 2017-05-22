@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#f8f9fe">
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="match_parent"
+        layout="@layout/actionbar_layout" />
+
+ <RelativeLayout
+     android:id="@+id/relativeLayout1"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_weight="0.07"
+     android:background="#000000" >
+
+     <TextView
+         android:id="@+id/title"
+         style="@style/Title"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:visibility="invisible" />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="162dp"
+         android:text="Loading ..." />
+
+     <ProgressBar
+         android:id="@+id/progg1"
+         android:layout_width="150dp"
+         android:layout_height="150dp"
+         android:layout_above="@+id/textView1"
+         android:layout_centerHorizontal="true" />
+
+ </RelativeLayout>
+
+    <include
+        android:id="@+id/include3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/footer_layout" />
+
+</LinearLayout>
+       
+ 

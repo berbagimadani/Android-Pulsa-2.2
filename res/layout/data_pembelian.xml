@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f9fe"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="match_parent"
+        layout="@layout/actionbar_layout"
+        tools:ignore="IncludeLayoutParam" />
+
+    <ScrollView
+        style="@style/Background"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.56"
+            tools:ignore="ObsoleteLayoutParam" >
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="86dp"
+                android:text="NO. PIN"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                style="@style/Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/title"
+                android:text="NO. TUJUAN"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/hp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/TextView01"
+                android:hint="Masukkan No Tujuan"
+                tools:ignore="HardcodedText" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView1"
+                android:hint="Masukkan No Pin"
+                android:password="true"
+                tools:ignore="HardcodedText,Deprecated" />
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/pin"
+                android:text="OK"
+                tools:ignore="HardcodedText" />
+
+            <ListView
+                android:id="@+id/android:list"
+                style="@style/Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:visibility="invisible"
+                tools:ignore="NestedScrolling" >
+
+            </ListView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/marquee" />
+
+    <include
+        android:id="@+id/include3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/footer_layout" />
+
+</LinearLayout>

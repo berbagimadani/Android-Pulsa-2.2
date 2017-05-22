@@ -1,0 +1,99 @@
+<resources>
+    <style name="StyleHeader">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">#dedede</item>
+    </style>
+    
+	  <style name="MyTheme" parent="android:Theme.Light">
+	    <item name="android:windowNoTitle">true</item>
+	    <item name="android:windowBackground">@color/translucent_blue</item>
+	    <item name="android:listViewStyle">@style/MyListView</item>
+	  </style>
+	
+	  <style name="MyListView" parent="@android:style/Widget.ListView">
+	    <item name="android:listSelector">@drawable/listitem_selector</item>
+	  </style>
+ 
+    
+    <style name="Dashboard">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">265dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/bg</item>
+    </style> 
+     <style name="ActionBarCompat">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/actionbar_background</item>
+    </style>
+    <style name="DashboardButton">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff29549f</item>
+        <item name="android:background">@null</item>
+    </style>    
+ 
+	 
+	 
+    <style name="Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">#4876A8</item>
+    </style>    
+    
+     <style name="Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">@drawable/bg</item>
+    </style>    
+    
+      <style name="Text2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>    
+    
+    <style name="Text_Community">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>    
+    
+   <style name="FooterBar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">#bde38f</item>
+    </style>
+   <style name="Background">
+       <item name="android:background">#f8f9fe</item>
+   </style>     
+   
+    <style name="WelBg">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/wel_bg</item>
+    </style>
+</resources>

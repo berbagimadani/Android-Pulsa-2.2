@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActionBarCompat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            style="@style/ActionBarCompat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="5dip"
+                android:src="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/MainMenu_AnimView2"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/dot_anim_black" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_head"
+        style="@style/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.01"
+        android:background="#0c4d69"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/android:list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@drawable/listitem_selector" >
+        </ListView>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/marquee" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        style="@style/ActionBarCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

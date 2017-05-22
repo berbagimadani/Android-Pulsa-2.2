@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.transaksi"
+    android:versionCode="1"
+    android:versionName="1.0" >
+ 
+    <uses-sdk android:minSdkVersion="8"
+        android:targetSdkVersion="16"
+        android:maxSdkVersion="17" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".Welcome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Transaksi_First" android:theme="@style/MyTheme"></activity>
+        <activity android:name=".KodeSmsCenter" android:theme="@style/MyTheme"></activity>
+        <activity android:name=".Transaksi_Second"></activity>
+        <activity android:name=".Cek_Harga"></activity>
+        <activity android:name=".FieldSmsCenter"></activity>
+        <activity android:name=".SendSMS"></activity>
+    <receiver android:name=".SmsReceiver"> 
+            <intent-filter> 
+               <action android:name=
+                    "android.provider.Telephony.SMS_RECEIVED" /> 
+            </intent-filter> 
+    </receiver>
+    <activity android:name=".dialog"></activity>
+    <activity android:name=".Splash"></activity>
+    <activity android:name=".FieldSmsCenter2"></activity>
+    <activity android:name=".dialog2"></activity>
+    <activity android:name=".Ganti_Pin"></activity>
+    <activity android:name=".Transfer_Deposit"></activity>
+    <activity android:name=".Reg_Agen"></activity>
+    <activity android:name=".Tiket"></activity>
+    <activity android:name=".Komplain"></activity>
+    <activity android:name=".Belanja"></activity>
+    <activity android:name=".Info"></activity>
+    <activity android:name=".TransaksiPulsaActivity"></activity>
+    <activity android:name="Reg_Member"></activity>
+    <activity android:name=".FieldSmsCenter3"></activity>
+    <activity android:name=".Splash3"></activity>
+    </application>
+<uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+<uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+
+</manifest>

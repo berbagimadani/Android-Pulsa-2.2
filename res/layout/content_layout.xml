@@ -1,0 +1,103 @@
+<com.transaksi.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1" android:background="#f8f9fe">
+	     <Button
+	        android:id="@+id/pembelian"
+	        style="@style/DashboardButton"
+	        android:drawableTop="@drawable/btn_pembelian"
+	        android:text="Pembelian" />
+
+	     
+
+ 
+	     <Button
+	        android:id="@+id/ceksaldo"
+	        style="@style/DashboardButton"
+	        android:drawableTop="@drawable/btn_cek_saldo"
+	        android:text="Cek Saldo" />
+
+	    <Button
+	        android:id="@+id/cekrekap"
+	        style="@style/DashboardButton"
+	        android:drawableTop="@drawable/btn_rekap"
+	        android:text="Cek Rekap" />
+ 
+	    <Button
+	        android:id="@+id/gantipin"
+	        style="@style/DashboardButton"
+	        android:drawableTop="@drawable/btn_ganti_pin"
+	        android:text="Ganti Pin" />
+ 
+	     <Button
+	        android:id="@+id/transferdeposite"
+	        style="@style/DashboardButton"
+	        android:drawableTop="@drawable/btn_transfer"
+	        android:text="Transfer Deposit" />
+
+	     <Button
+	         android:id="@+id/pembayaran"
+	         style="@style/DashboardButton"
+	         android:drawableTop="@drawable/btn_pembayaran"
+	         android:text="Pembayaran" />
+	
+	    <Button
+	        android:id="@+id/registrasi"
+	        style="@style/DashboardButton"
+	        android:drawableTop="@drawable/btn_registrasi"
+	        android:text="Registrasi Agen" />
+ 
+	     <Button
+	        android:id="@+id/tiket"
+	        style="@style/DashboardButton"
+	        android:drawableTop="@drawable/btn_tiket"
+	        android:text="Tiket" />
+	    <Button
+	        android:id="@+id/komplain"
+	        android:text="Komplain" style="@style/DashboardButton" android:drawableTop="@drawable/btn_komplain"/>
+ 
+	
+	    <Button
+	        android:id="@+id/belanja"
+	        style="@style/DashboardButton"
+	        android:drawableTop="@drawable/btn_belanja"
+	        android:text="Belanja" />
+ 
+ 
+    <Button
+        android:id="@+id/cekharga"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_cek_harga"
+        android:text="Cek Harga" />
+		
+    <Button
+	         android:id="@+id/pembelian2"
+	         style="@style/DashboardButton"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_marginBottom="10dp"
+	         android:layout_marginLeft="18dp"
+	         android:layout_marginTop="15dp"
+	         android:drawableTop="@drawable/btn_pembelian2"
+	         android:text="Pembelian2" />
+
+	    <Button
+	        android:id="@+id/pembelian3"
+	        style="@style/DashboardButton"
+	        android:drawableTop="@drawable/btn_pembelian3"
+	        android:text="Pembelian3" />
+	    
+    	 <Button
+    	     android:id="@+id/info"
+    	     style="@style/DashboardButton"
+    	     android:drawableTop="@drawable/btn_info"
+    	     android:text="Info" />
+ 
+	    <Button
+	        android:id="@+id/exit"
+	        style="@style/DashboardButton"
+	        android:drawableTop="@drawable/btn_keluar"
+	        android:text="Exit" />
+ 
+ </com.transaksi.DashboardLayout>

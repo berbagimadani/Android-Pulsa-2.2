@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#f8f9fe">
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/actionbar_layout" />
+
+ <RelativeLayout
+     android:id="@+id/relativeLayout1"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_weight="0.07" >
+
+     <TextView
+         android:id="@+id/title"
+         style="@style/Title"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true" />
+
+     <TextView
+         android:id="@+id/txt_confirm"
+         style="@style/Text2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/title"
+         android:text="TextView" android:textStyle="bold" android:layout_centerHorizontal="true"/>
+
+     <Button
+         android:id="@+id/ok"
+         android:layout_width="80dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/txt_confirm"
+         android:layout_marginLeft="74dp"
+         android:layout_marginTop="52dp"
+         android:text="OK" />
+
+     <Button
+         android:id="@+id/cancel"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/ok"
+         android:layout_alignBottom="@+id/ok"
+         android:layout_toRightOf="@+id/ok"
+         android:text="CANCEL" />
+
+ </RelativeLayout>
+
+    <include
+        android:id="@+id/include3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/footer_layout" />
+
+</LinearLayout>
